@@ -7,9 +7,12 @@ class Window
 {
 public:
     Window();
+    Window(std::string_view name);
     ~Window();
     
-    void test();
+    std::string_view GetWindowName();
+    
+    void SetWindowName(const std::string_view& name);
     
 private:
     class Impl;
