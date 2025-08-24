@@ -7,7 +7,7 @@ class Window
 {
 public:
     Window();
-    Window(std::string_view name);
+    explicit Window(std::string_view name);
     ~Window();
     
     std::string_view GetWindowName();

@@ -2,4 +2,6 @@
         Window.cpp
         Window.hpp
         main.cpp
+        WindowsContext.cpp
+        WindowsContext.hpp
 )

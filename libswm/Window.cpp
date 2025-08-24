@@ -3,26 +3,24 @@
 #include <iostream>
 #include <windows.h>
 
-
-
 class Window::Impl
 {
 public:
     Impl()
     {
-        WNDCLASSEX wndClass {};
+        WNDCLASSEXA wndClass {};
         wndClass.style = 0;
         wndClass.lpfnWndProc = WndProc;
         wndClass.lpszClassName = "Untitled Window";
 
-        RegisterClassEx(&wndClass);
+        RegisterClassExA(&wndClass);
         
-        _hwnd = CreateWindowEx()
+        _hwnd = CreateWindowExA()
     }
 
     Impl(std::string_view name)
     {
-        _hwnd = CreateWindowEx()
+        _hwnd = CreateWindowExA()
     }
     
     
